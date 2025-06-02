@@ -138,7 +138,25 @@ bot.on(message('text'), ctx => {
     ctx.reply('Whaaa?')
 })
 
-loadState().then(() => {
-  bot.launch()
-  console.log('bot is running')
-})
+if (process.MODE === 'dev') {
+    loadState().then(() => {
+        bot.launch()
+        console.log('bot is running')
+      })
+}
+
+
+module.exports.handler = async function (event, context) {
+    console.log('GOT MESSAGE')
+    try {
+        const message = JSON.parse(event['messages'][0]['details']['message']['body']);
+        await bot.handleUpdate(message);
+    } catch (e) {
+        console.log('error');
+        console.log(e);
+    }
+    return {
+        statusCode: 500,
+        body: event.string,
+    };
+};
