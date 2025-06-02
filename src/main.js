@@ -149,6 +149,7 @@ if (process.MODE === 'dev') {
 module.exports.handler = async function (event, context) {
     console.log('GOT MESSAGE')
     try {
+        await loadState()
         const message = JSON.parse(event['messages'][0]['details']['message']['body']);
         await bot.handleUpdate(message);
     } catch (e) {
