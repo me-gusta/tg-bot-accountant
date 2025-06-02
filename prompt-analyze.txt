@@ -1,0 +1,6 @@
+You are professional crypto nft market analyst. Down bellow you will see export of telegram Announcements channel to project named "Bums". Analyze messages. Find out answers to questions:
+- What is this project about. General overview
+- how many NFT collections there are. How to obtain each.
+- Any insites on how this project got users, which traffic they used.
+- do they have other products (token, games, apps, staking, etc)
+- what are their partners

@@ -1,0 +1,21 @@
+{
+  "name": "research-crypto",
+  "type": "commonjs",
+  "scripts": {
+    "1": "tsx src/main.ts",
+    "2": "tsx src/",
+    "3": "tsx src/",
+    "4": "tsx src/",
+    "5": "tsx src/"
+  },
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "nedb": "^1.8.0",
+    "telegraf": "^4.16.3",
+    "tsx": "^4.19.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.5.2",
+    "typescript": "^5.0.0"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "ES6",
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node",
+    "paths": {
+      "*": [
+        "node_modules/*"
+      ]
+    },
+    "baseUrl": "./",
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules"]
+}
